@@ -28,10 +28,10 @@ public:
     size_t numberOfParticles() const;
 
     //! add a scalar layer and return its index
-    size_t addScalarData(const glm::vec1 initValue = glm::vec1(0));
+    size_t addScalarData(const glm::vec1 &initValue = glm::vec1(0));
 
     //! add a vector layer and return its index
-    size_t addVectorData(const glm::vec2 initValue = glm::vec2(0,0));
+    size_t addVectorData(const glm::vec2 &initValue = glm::vec2(0,0));
 
     double radius() const;
     virtual void setRadius(double newRadius);

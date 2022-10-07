@@ -45,13 +45,13 @@ size_t ParticleSystemData2::numberOfParticles() const {
     return _numberOfParticles;
 }
 
-size_t ParticleSystemData2::addScalarData(const glm::vec1 initValue) {
+size_t ParticleSystemData2::addScalarData(const glm::vec1 &initValue) {
     size_t attrIdx = _scalarDataList.size();
     _scalarDataList.emplace_back(numberOfParticles(), initValue);
     return attrIdx;
 }
 
-size_t ParticleSystemData2::addVectorData(const glm::vec2 initValue) {
+size_t ParticleSystemData2::addVectorData(const glm::vec2 &initValue) {
     size_t attrIdx = _vectorDataList.size();
     _vectorDataList.emplace_back(numberOfParticles(), initValue);
     return attrIdx;
